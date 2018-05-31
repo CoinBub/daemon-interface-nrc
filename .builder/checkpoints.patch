@@ -1,0 +1,19 @@
+--- checkpoints.cpp2018-05-30 12:25:35.000000000 +0000
++++ checkpoints.cpp2 2018-05-30 15:58:22.771482020 +0000
+@@ -25,15 +25,7 @@
+     //    timestamp before)
+     // + Contains no strange transactions
+     //
+-    static MapCheckpoints mapCheckpoints =
+-        boost::assign::map_list_of
+-        ( 1,   uint256("0x0000041ad224225fd86b7c9e7cafff07b4947fd07530dd8d57f1dd5329e032a6") )
+-        ( 85,   uint256("0x0000001187ebcce34716bbf778da5346cbbba31c91ee5f71f60002a051dbbfd8") )
+-        ( 45028,   uint256("0x06e27e93c2c878aeaadad7a940fdf4eca26a55fda6581e3f7bac00659d1537c3") )
+-        ( 96815,   uint256("0x07094f86701f08918f666d9dbc36e14bbeea7797279f7c92ae2622499dea5cea") )
+-
+-
+-    ;
++    static MapCheckpoints mapCheckpoints;
+ 
+     // TestNet has no checkpoints
+     static MapCheckpoints mapCheckpointsTestnet;

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ ! -f /home/nrc/.Noorcoin/Noorcoin.conf ];
+then
+    echo "rpcuser=$(whoami)" >> /home/nrc/.Noorcoin/Noorcoin.conf
+    echo "rpcpassword=$(pwgen 64 1)" >> /home/nrc/.Noorcoin/Noorcoin.conf
+    cat /home/nrc/.Noorcoin/Noorcoin.conf
+fi
+
+exec "$@"
